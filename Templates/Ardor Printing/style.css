@@ -3,17 +3,17 @@
 :root {
     --font: 'Fira Sans', sans-serif;
     
-    --background: #0b2c3b;
-    --selection: #0b2c3b;
-    --comment: #f3801d;
+    --background: #000000;
+    --selection: #7e0000;
+    --comment: #ffffff;
     --cream: #f8e6c4;
-    --green: #009e7d;
+    --green: #930909;
 }
 
 body{
-    background: var(--background) url(img/pem.jpg) repeat center bottom;
+    background: var(--background) url() repeat center bottom;
     background-size: contain;
-    color: var(--cream);
+    color: var(--white);
     height: 100vh;
 }
 
@@ -34,25 +34,29 @@ footer a:hover {
     color: var(--comment);
 }
 
-#userPhoto{
-    width: 96px;
-    height: 96px;
+#Ardor{
+    width: 200px;
+    height: 110px;
 
-    display: block;
+    display: grid;
+    place-items: center;
 
     margin: 35px auto 20px;
 
     border-radius: 50%;
-    border: solid var(--cream) 2px;
+    border: solid var(--red) 2px;
 }
 
 #userName{
     width: 100%;
 
-    color: var(--cream);
+    color: white;
+    border-style: solid;
+    
+
 
     font-family: var(--font);
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: 400;
 
     text-align: center;
@@ -63,7 +67,7 @@ footer a:hover {
 }
 
 #links{
-    max-width: 675px;
+    max-width: 400px;
     width: auto;
 
     display: block;
@@ -84,12 +88,12 @@ footer a:hover {
 	font-size: 1rem;
 	font-weight: bold;
 	transition: all 0.15s;
-	box-shadow: 4px 4px #086a55;
+	box-shadow: 4px 4px #000000;
 }
 
 .link:hover, .link:focus {
-	background: #09bf90;
-	box-shadow: 2px 2px #086a55;
+	background: #bf0909;
+	box-shadow: 2px 2px #ffffff;
     cursor: pointer;
 	transform: translate(2px);
     transition: all ease-in 0.3s;
